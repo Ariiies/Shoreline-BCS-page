@@ -1,0 +1,150 @@
+/* Gallery.css */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff; /* Fondo claro */
+  }
+  
+  .gallery-image {
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-image img:hover {
+    transform: scale(1.02);
+  }
+  
+  .gallery-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  /* Agrega esto a tu archivo CSS */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .btn, .back-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+  }
+  
+  .btn {
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .btn:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  .back-btn {
+    background-color: #646cff;
+    color: white;
+    box-shadow: 0 2px 5px rgba(100, 108, 255, 0.3);
+  }
+  
+  .back-btn:hover {
+    background-color: #535bf2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(100, 108, 255, 0.4);
+  }
+  
+  /* Efectos de iconos (opcional) */
+  .btn:nth-child(1)::before {
+    content: "←";
+    margin-right: 8px;
+  }
+  
+  .btn:nth-child(3)::after {
+    content: "→";
+    margin-left: 8px;
+  }
+  .gallery-image {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease; /* Transición suave */
+  }
+  
+  .gallery-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  /* (Mantén los estilos de botones que ya tenías) */
+  /* Responsive */
+  @media (max-width: 600px) {
+    .btn-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .btn, .back-btn {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    .gallery {
+      padding: 1rem;
+    }
+    
+    .gallery-image {
+      max-width: 100%;
+    }
+    
+    .back-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
