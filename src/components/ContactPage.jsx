@@ -10,7 +10,7 @@ const ContactPage= () => {
 
   return (
     <>
-   <h1>   pagina de contacto    </h1>
+   <h1 >   pagina de contacto    </h1>
     <Link to="/">
           <button className="back-btn">Home</button>
     </Link>

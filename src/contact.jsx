@@ -10,4 +10,4 @@ function Contact() {
       </>);
   }
   
-  export default Gallery;
+  export default Contact;

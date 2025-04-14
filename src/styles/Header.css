@@ -19,7 +19,10 @@
   color: #ffffff;
   cursor: pointer;
 }
-
+.title-logo {
+  color:#ffffff !important;  /* Color del texto */
+  font-size: 1.5rem;
+}
 
 
 .nav-button {
